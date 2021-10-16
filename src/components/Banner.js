@@ -1,4 +1,5 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Button } from "@chakra-ui/react";
+import brandLogo from "../assets/brand-logo.svg";
 
 function Banner() {
   return (
@@ -12,9 +13,16 @@ function Banner() {
           mr={6}
         >
           <Box>
-            <Image></Image>
+            <Image boxSize="90px" src={brandLogo} alt="brand" />
           </Box>
-          <Box></Box>
+          <Box>
+            <Button pr={3} colorScheme="gray.600" fontSize="sm" variant="link">
+              Log In
+            </Button>
+            <Button colorScheme="gray.600" fontSize="sm" variant="link">
+              Sign Out
+            </Button>
+          </Box>
         </Box>
       </header>
     </>
