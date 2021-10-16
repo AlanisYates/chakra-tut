@@ -1,10 +1,23 @@
-import React from "react";
+import { Box, Image } from "@chakra-ui/react";
 
 function Banner() {
   return (
-    <div>
-      <h1>Banner</h1>
-    </div>
+    <>
+      <header>
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="space-between"
+          ml={6}
+          mr={6}
+        >
+          <Box>
+            <Image></Image>
+          </Box>
+          <Box></Box>
+        </Box>
+      </header>
+    </>
   );
 }
 
